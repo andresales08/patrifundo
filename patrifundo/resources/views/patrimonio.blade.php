@@ -79,12 +79,10 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="row text-center">
                     <div class="col-sm-4 col-lg-2 col-md-2 mx-auto">
                         <label for="exampleInputEmail1">Data</label>
                         <input type="text" id="date" name="date" class="calendario form-control date" placeholder="DD/MM/YYYY"  autocomplete="off" />
-
                     </div>
                     <div class="col-12">
                             <button type="submit" class="btn btn-primary">Salvar</button>
@@ -97,7 +95,6 @@
       </div>
     @endif
 
-    
 @if( request()->segment(2) == 'edit')
     <div class="row">
         <div class="col-12">
@@ -113,7 +110,6 @@
                         <label for="valorPatrimonio">Fundo {{$editaPatrimonio->fundo_id}}</label> 
                         <input type="text" class="form-control money" id="valorPatrimonio" name="valorPatrimonio" value="{{ number_format($editaPatrimonio->value, 2, ',', '.') }}">
                     </div>
-
                     <button id="botaoEditar" type="submit" class="btn btn-warning ">Editar</button>
                 </form>
               </div>
@@ -121,7 +117,6 @@
           </div>
       </div>
     @endif
-
 
         <div class="row">
           <div class="col-12">
@@ -142,8 +137,6 @@
                 </div>
               </div>
               <div class="card-body">
-
-
               <table id="example" class="display" style="width:100%">
                 <thead>
                     <tr>
